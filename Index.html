@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<met name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Electronhubsamsung</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+margin:0px;
+padding:0px;
+overflowhidden;
+}
+
+a{
+text-decoration:none;
+color:black;
+}
+
+#bar{
+width:100%;
+height:70px;
+background:yellow;
+position:relative;
+top:1px;
+
+}
+
+#home{
+width:20%;
+height:70px;
+box-sizing:border-box;
+background:yellow;
+text-align:center;
+font-weight:bold;
+padding:17px 0px 0px 0px;
+float:left;
+}
+
+#home:hover{
+background:red;
+color:white;
+font-size:20px;
+transition:0.5s;
+border-radius:5px;
+}
+
+#product{
+width:20%;
+height:70px;
+box-sizing:border-box;
+background:yellow;
+text-align:center;
+font-weight:bold;
+padding:17px 0px 0px 0px;
+float:left;
+position:relative;
+color:black;
+}
+
+#product:hover{
+background:red;
+color:white;
+font-size:20px;
+transition:0.5s;
+border-radius:5px;
+}
+
+#support{
+width:20%;
+height:70px;
+box-sizing:border-box;
+background:yellow;
+text-align:center;
+font-weight:bold;
+padding:17px 0px 0px 0px;
+float:left;
+}
+
+#support:hover{
+background:red;
+color:white;
+font-size:20px;
+transition:0.5s;
+border-radius:5px;
+}
+
+#about{
+width:20%;
+height:70px;
+box-sizing:border-box;
+background:yellow;
+text-align:center;
+font-weight:bold;
+padding:17px 0px 0px 0px;
+float:left;
+}
+
+#about:hover{
+background:red;
+color:white;
+font-size:20px;
+transition:0.5s;
+border-radius:5px;
+}
+
+#contact{
+width:20%;
+height:70px;
+box-sizing:border-box;
+background:yellow;
+text-align:center;
+font-weight:bold;
+padding:17px 0px 0px 0px;
+float:left;
+}
+
+#contact:hover{
+background:red;
+color:white;
+font-size:20px;
+transition:0.5s;
+border-radius:5px;
+}
+
+#submenu{
+width:110%;
+height:100px;
+background:#ffa96a;
+box-sizing:border-box;
+overflow:scroll;
+border-radius:2px 15px 15px 15px;
+position:relative;
+top:23px;
+left:65px;
+display:none;
+color:black;
+}
+
+#product:hover #submenu{
+display:block;
+font-size:16px;
+}
+
+#submenu>div{
+height:40px;
+text-align:justify;
+padding-left:10px;
+padding-top:5px;
+box-sizing:border-box;
+}
+
+#submenu>div:hover{
+background:red;
+color:white;
+border-radius:36px;
+transition:0.5s;
+}
+
+#hub{
+width:100%;
+height:350px;
+box-sizing:border-box;
+
+background-image:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7MhA9nh10xsTBz9JeAZ4YNq54-PR-3hO3Ja5qvfx92HGfSauduYAxDz4rrBtxEkCHpBWTu8K7gn2IDnEEUL5EQUgXSK0jsOUlwWsrSx3sdWxkvdoIzs5RdqS66tCaKFOFgaiUwlIDhBnO-y1DW3zDUDfg6xuVaXIyS0BGSlx8L20oGT4cpwkb3lzMLvw/s612/IMG-20240414-WA0000.jpg);
+background-size:100%;
+padding-top:140px;
+margin-bottom:15px;
+}
+
+h1{
+font-size:8vw;
+text-align:center;
+margin:0px;
+padding:0px;
+color:white;
+}
+
+h2{
+font-size:3vw;
+margin:0px;
+padding:0px;
+text-align:center;
+color:white;
+}
+
+#family{
+font-weight:bold;
+float:left;
+margin:0px;
+margin-left:5px;
+box-sizing:border-box;
+padding:2px;
+text-align:center;
+border:none;
+}
+
+#moon{
+float:right;
+margin-right:20px;
+}
+
+#sun{
+float:right;
+margin-right:20px;
+}
+
+b{
+margin-right:150px;
+}
+
+#smartp{
+width:100%;
+height:1000px;
+border:none;
+box-sizing:border-box;
+margin-top:25px;
+overflow:scroll;
+overflow-x:hidden;
+margin-bottom:15px;
+}
+
+#smartp>div{
+width:49%;
+box-sizing:border-box;
+height:400px;
+float:left;
+margin:2px 0px 2px 7px;
+}
+
+#img1{
+position:relative;
+bottom:95px;
+left:25px;
+}
+
+
+#ultra{
+position:relative;
+left:25px;
+bottom:110px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#rs{
+position:relative;
+left:307px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#s24{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#buy1{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#s23{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#galax{
+position:relative;
+left:55px;
+bottom:110px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#img2{
+position:relative;
+bottom:90px;
+right:90px;
+}
+
+#rs69{
+position:relative;
+left:315px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#s21{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#fe{
+position:relative;
+left:25px;
+bottom:95px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#img3{
+position:relative;
+bottom:90px;
+right:17px;
+}
+
+#rs39{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#f15{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#f1{
+position:relative;
+left:45px;
+bottom:95px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#img4{
+position:relative;
+bottom:90px;
+right:10px;
+}
+
+#rs15{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#f55{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#f5{
+position:relative;
+left:30px;
+bottom:45px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#img5{
+position:relative;
+bottom:60px;
+right:5px;
+}
+
+#rs29{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#m14{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#m1{
+position:relative;
+left:48px;
+bottom:190px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#img6{
+position:relative;
+bottom:130px;
+right:70px;
+}
+
+#rs12{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#update{
+margin:0px; 
+position:relative; 
+right:35%;
+bottom:135px;
+font-size:3vw;
+color:red;
+animation:update 1s linear infinite;
+
+}
+
+@keyframes update {
+    0% {
+        transform: translateZ(-100%); 
+        opacity: 0; 
+    }
+    100% {
+transform: translateZ(0); 
+opacity: 1; 
+text-shadow: 0px 0px 5px white;
+    }
+}
+
+#smartw{
+width:100%;
+height:400px;
+border:none;
+margin:25px 0px 15px 0px;
+box-sizing:border-box
+}
+
+#smartw>div{
+width:50%;
+height:400px;
+box-sizing:border-box;
+margin:2px 0px 2px 0px;
+float:left;
+}
+
+#rs49{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#fit3{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#img7{
+position:relative;
+bottom:170px;
+right:80px;
+}
+
+#fi{
+position:relative;
+left:40px;
+bottom:260px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#rs36{
+position:relative;
+left:0px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#wat6{
+position:relative;
+left:0px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy2{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy3{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy4{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy5{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy6{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy7{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy8{
+position:relative;
+right:165px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+
+
+#img8{
+position:relative;
+bottom:107px;
+right:-150px;
+height:340px;
+}
+
+#wat{
+position:relative;
+left:0px;
+bottom:120px;
+font-size:25px;
+font-weight:bold;
+}
+
+#tab{
+width:100%;
+height:400px;
+border:none;
+box-sizing:border-box;
+margin-top:25px;
+margin-bottom:15px;
+overflow:scroll;
+overflow-x:hidden;
+}
+
+#tab>div{
+width:50%;
+box-sizing:border-box;
+height:400px;
+float:left;
+margin:2px 0px 2px 0px;
+}
+
+#rs54{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#snine{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy9{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img9{
+position:relative;
+bottom:100px;
+right:26px;
+}
+
+#s9{
+position:relative;
+left:15px;
+bottom:150px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#rs24{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#anine{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy10{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img10{
+position:relative;
+bottom:130px;
+right:50px;
+}
+
+#a9{
+position:relative;
+left:20px;
+bottom:210px;
+font-size:2.6vw;
+font-weight:bold;
+}
+
+#tel{
+width:100%;
+height:400px;
+border:none;
+overflow:scroll;
+overflow-x:hidden;
+margin:25px 0px 15px 0px;
+}
+
+#tel>div{
+width:50%;
+height:400px;
+box-sizing:border-box;
+margin:2px 0px 2px 0px;
+float:left;
+}
+
+#rs36490{
+position:relative;
+left:180px;
+top:260px;
+font-weight:bold;
+font-size:25px;
+}
+
+#cry{
+position:relative;
+left:52px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy11{
+position:relative;
+left:105px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img11{
+position:relative;
+bottom:170px;
+left:32px;
+}
+
+#rs187490{
+position:relative;
+left:180px;
+top:270px;
+font-weight:bold;
+font-size:25px;
+}
+
+#neo{
+position:relative;
+left:52px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy12{
+position:relative;
+left:105px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img12{
+position:relative;
+bottom:160px;
+left:32px;
+}
+
+#wash{
+width:100%;
+height:450px;
+border:none;
+margin:25px 0px 15px 0px;
+box-sizing:border-box;
+}
+
+#wash>div{
+width:50%;
+height:400px;
+margin:2px 0px 2px 0px;
+float:left;
+box-sizing:border-box;
+}
+
+#rs47900{
+position:relative;
+left:320px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#wash1{
+position:relative;
+left:310px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy13{
+position:relative;
+left:144px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img13{
+position:relative;
+bottom:70px;
+right:20px;
+}
+
+#rs24890{
+position:relative;
+left:0px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#wash2{
+position:relative;
+left:0px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy14{
+position:relative;
+left:-165px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img14{
+position:relative;
+bottom:70px;
+right:-150px;
+}
+
+#refri{
+width:100%;
+height:400px;
+box-sizing:border-box;
+border:none;
+margin:25px 0px 15px 0px ;
+}
+
+#refri>div{
+width:50%;
+height:400px;
+margin:2px 0px 2px 0px;
+float:left;
+}
+
+#rs19190{
+position:relative;
+left:60px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#refri1{
+position:relative;
+left:50px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy15{
+position:relative;
+left:-115px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img15{
+position:relative;
+bottom:100px;
+left:160px;
+}
+
+#rs109000{
+position:relative;
+left:0px;
+top:50px;
+font-weight:bold;
+font-size:25px;
+}
+
+#refri2{
+position:relative;
+left:0px;
+top:75px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy16{
+position:relative;
+left:-165px;
+top:170px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img16{
+position:relative;
+bottom:100px;
+right:-100px;
+}
+
+#microw{
+width:100%;
+height:400px;
+border:none;
+margin:25px 0px 15px 0px;
+overflow-x:hidden;
+}
+
+#microw>nav{
+width:50%;
+height:400px;
+float:left;
+}
+
+#out{
+position:relative;
+left:125px;
+top:265px;
+font-weight:bold;
+font-size:25px;
+}
+
+#microw1{
+position:relative;
+left:50px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy17{
+position:relative;
+left:75px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img17{
+position:relative;
+bottom:157px;
+left:35px;
+height:400px;
+}
+
+#outo{
+position:relative;
+left:125px;
+top:265px;
+font-weight:bold;
+font-size:25px;
+}
+
+#microw2{
+position:relative;
+left:50px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy18{
+position:relative;
+left:75px;
+top:275px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img18{
+position:relative;
+bottom:157px;
+left:35px;
+height:400px;
+}
+
+#airc{
+width:100%;
+height:400px;
+border:none;
+margin:25px 0px 15px 0px;
+overflow-x:hidden;
+}
+
+#airc>div{
+width:50%;
+height:400px;
+float:left;
+}
+
+#rs61990{
+position:relative;
+left:180px;
+top:235px;
+font-weight:bold;
+font-size:25px;
+}
+
+#airc1{
+position:relative;
+left:50px;
+top:245px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy19{
+position:relative;
+left:100px;
+top:245px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img19{
+position:relative;
+bottom:200px;
+left:0px;
+height:500px;
+}
+
+#outof{
+position:relative;
+left:150px;
+top:235px;
+font-weight:bold;
+font-size:25px;
+}
+
+#airc2{
+position:relative;
+left:50px;
+top:245px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#buy20{
+position:relative;
+left:100px;
+top:245px;
+margin:0px;
+width:160px;
+height:60px;
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+border-radius:5px;
+border:none;
+background:black;
+color:white;
+}
+
+#img20{
+position:relative;
+bottom:200px;
+left:0px;
+height:500px;
+}
+
+
+</style>
+</head>
+<body id="body">
+    <nav id="bar">
+
+<a href="https://electronhub.netlify.app">
+<div id="home">Home</div>
+</a>
+
+<div id="product">
+Products
+
+<section id="submenu">
+<div id="phone">
+Smartphones
+</div>
+<div id="watch">
+Smartwatch
+</div>
+<div id="tablet">
+Tablets
+</div>
+<div id="tele">
+Televisions
+</div>
+<div id="was">
+Washing Machines
+</div>
+<div id="ref">
+Refrigerator
+</div>
+<div id="micro">
+Microwaves
+</div>
+<div id="air">
+Air Conditioners
+</div>
+</section>
+
+</div>
+
+<a href="https://electronhubsupport.netlify.app">
+<div id="support">Support</div>
+</a>
+<a href="https://electronhubaboutus.netlify.app">
+<div id="about">About Us</div>
+</a>
+<a href="https://electronhubsupport.netlify.app">
+<div id="contact">Contact Us</div>
+</a>
+</nav>
+
+<div id="hub">
+<h1>
+Electron Hub
+</h1>
+<br>
+<h2>
+Har Ghar ki technology bas yehi  se! 
+</h2>
+</div>
+<input type="text" placeholder="Write  Font Family || Saturate" id="family" oninput="family()">
+
+<i class="fa-solid fa-moon" id="moon" onclick="Night()"></i>
+<i class="fa-solid fa-sun" id="sun" onclick="Day()"></i>
+<center>
+<b>
+Smartphones
+</b>
+</center>
+
+
+<div id="smartp">
+
+<div id="p1"> 
+
+<p id="rs"> &#8377;1,39,999</p>
+<button id="s24">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy1()" id="buy1">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtPc8l-KBMcmAgBsYCdTdSrfq5RtkHKvSacLEHb8kXl81gBsEiZfp_-iUVIAtujd1sSiA0jQc3Hx-u_Bk3VGKWZzv_qINPkfeK4bjLBQ3PYohepVzeF1hZMJ9witiL-rxPV2Zag-Mx-rrqgzc3CW-YDTlqiVeIYllJSzRkxW71s6bKZcsu5RFXghtmyQw/s256/IMG_20240603_205651.png" height="340px" id="img1">
+<p id="ultra"> Samsung Galaxy S24 Ultra</p>
+
+</div>
+
+
+<div id="p1">
+
+<p id="rs69"> &#8377;69,999</p>
+<button  id="s23">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy2()" id="buy2">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7YEfmz3HBt8Aj8qG7lJHZoxeDaPM-fcY5rsXmGbCetBYIebGnUOqHiAZbHYaqCSQhRS2R8k51n20XIrej0dsAPh9RlbvJVm6JTDbGNzRuLKmljACxPl_MwszWv2rZsDEBHnFEWZr0OnIDSPgMxiEDPs_aCBMvLJN4zARfcHZ9NO9HNBj-MPVls9arIFc/s720/in-galaxy-s23-s911-446648-sm-s911blibins-536009999.png" height="340px" id="img2">
+<p id="galax"> Samsung Galaxy S23</p>
+
+ </div>
+
+
+<div id="p1">
+
+<p id="rs39"> &#8377;39,999</p>
+<button  id="s21">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy3()" id="buy3">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZuvrWJJngFri4o6RxsHG4GXDsYZ0JzQBWfwoMZgQPBrsYKwr6AAsNK9WpYCf_89wq2LTio0giycXE0NadOyvkor9u57v0zt6DzU_Yu-vWJis9O87zoly1VPrvmCBXYULqfWbirHtROELY9nYmo3bs6Z3GQLvUf2roAW4AM3KDdLOuYHe1yK-9bgCcJo/s256/in-galaxy-s21-fe-g990-464368-sm-g990blg4ins-thumb-537060640.png" height="340px" id="img3">
+<p id="fe"> Samsung Galaxy S21 FE</p>
+
+ </div>
+<div id="p1">
+
+<p id="rs15"> &#8377;15,999</p>
+<button  id="f15">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy4()" id="buy4">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDMQ4mCcKCTAg4XOK-5Zu-EYFhK9auRP_fzO5iJIK61-YD-Io9rnfOiA_ScZR8D2u5nAtKT-7wg0WsHsh8J8eKDaF4SPZQfeRrxHwUJJch1ZzhKII0_z9pes4BV4HTQ-RtNdr-R617pprI4QjbWqM_0_lxNhCQJIGkkwxu6RNDf1WI3Q6mFIb2363qEjk/s256/in-galaxy-f15-5g-6gb-memory-sm-e156bzkgins-thumb-540211499.png"
+" height="340px" id="img4">
+<p id="f1"> Samsung Galaxy F15</p>
+
+ </div>
+<div id="p1">
+
+<p id="rs29"> &#8377;29,999</p>
+<button  id="f55">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy5()" id="buy5">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbYaCyrjyT44g8Vi9sAi4mVqnkcpB8gLFyBcqBblwZuZSu3W32RSEvakL2yFBQantY4HqcwwloTpi1iWtdWHonMDNxB6wcPC0tzXIUV4BTHznUB3sNLFDWMGUqGk9MH95HetPw4PWPLCOSWOwgn-UCNdE9Y7YR7Q1wEk-i6bBHzSxN3nBWL5TQEH7EpK8/s256/in-galaxy-f55-5g-12gb-memory-sm-e556bzkdins-thumb-541631936.png" height="320px" id="img5">
+<p id="f5"> Samsung Galaxy F55</p>
+
+ </div>
+<div id="p1"> 
+
+<p id="rs12"> &#8377;12,499</p>
+<button  id="m14">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy6()" id="buy6">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWhXBm5SHo5IlobDpaN7QryeCEykb_ZWGM4AuhkvQoxCXiolmoprlm8CyWkMAzfuSMtyUEyICk7lzx4aIEbm0n9noGUub_Ws7_rN5lgR6kHMD02sNm2o0rfHTbGamuOqy7l47YvX7qoDGW3-HDksG8stVQqfeBdPsUhcysktTTmtQjioSRvkwJB45J3G8/s480/in-galaxy-m14-5g-4gb-ram-sm-m146bzbgins-thumb-537266364.png" height="460px" id="img6">
+<p id="m1"> Samsung Galaxy M14</p>
+<h3 id="update">New Stock Updates !</h3>
+
+</div>
+
+</div>
+<center>
+<p style="font-weight:bold;">
+Smartwatch
+</p>
+</center>
+<div id="smartw">
+
+
+<div id="w1">
+
+<p id="rs49"> &#8377;4,999</p>
+<button  id="fit3">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy7()" id="buy7">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmkFRSawEK9nk2qBroXXS0cBbbhZfRK1kTLGvSBqziHOYJBfYfm6ePPm4RYVE8m4UpeL7fbGkX1fyVppRNIaks7ieUmui6Z-PdMMi6zDKSl9mhEecyLVskOSvvongbHmyuyXlLTtnxJYKBQ7A-Ij8cv3blF_1pF0CvaxfX3qNUlX2iqJe6nsYfaOVQaQY/s480/in-galaxy-fit3-r390-sm-r390nzaainu-thumb-539989180.png" id="img7">
+<p id="fi"> Samsung Galaxy Fit3</p>
+
+</div>
+<div id="w1">
+
+<p id="rs36"> &#8377;36,999</p>
+<button  id="wat6">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy8()" id="buy8">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNYQLVPJc1TWb-VF0NP9y0dkwxvMEgJtbWMl7OJETSBNkMVO5PGfP8kpG5dVxmsxjEaaB90Pjl0pBZMGX4o6_pfMbHNzw7yD5j2X87F6Zte2EXpW6RKUMCBVxZKIaHEdbS0cCp1XkNSoYC4oIhBqusfrGcrjxMA9pbT-y1A6qJnYLw_8-DEajwZmgfMX0/s344/in-galaxy-watch6-r945-469954-sm-r945fzsains-thumb-537406822.png"  id="img8">
+<p id="wat"> Samsung Galaxy Watch6</p>
+
+</div>
+</div>
+<center>
+<p style="font-weight:bold;">
+Tablets
+</p>
+</center>
+<div id="tab">
+<div id="t1">
+
+<p id="rs54"> &#8377;54,999</p>
+<button  id="snine">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy9()" id="buy9">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguey06rXcs_S9QDA28HjTddqqGSEblpBBZsHZFFykZRjnvPCrjSvK3o6LfaqWeZmeQyW-Oiu07tjsS8_SgekMVfSKav2zrnfvUmp8_s4Vr1KxvK9ZWO2Tl2uF84x2CIM9ByKVFlcJFisRGxG2PrssSN6nNgiJO8CBmSe6Jc-b5_pTyBVzaca1VLcG9bec/s344/in-galaxy-tab-s9-fe-sm-x510-481717-sm-x510nlgeinu-thumb-538592679.png" height="350px" id="img9">
+<p id="s9">
+ Samsung Galaxy Tab S9 FE
+</p>
+
+</div>
+<div id="t1">
+
+<p id="rs24"> &#8377;24,999</p>
+<button  id="anine">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy10()" id="buy10">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXtQKuR36cTmQDi5HF8lnRDceKJKtSJJ0-SOKGw-YvbncAxgQocyZgbbx7OOMxEtlnweO85xwUc416YM1W6crLinuVXa9CPrTTankT7po-cnchyse_VbBJ-RR7evvTE3OFDz0lY8Vi06bAGXmvv7uqGckjJiuuTcopIAVbhGNyL1g68SMzWjLJWGHewWk/s344/uk-galaxy-tab-a9-plus-sm-x210-sm-x210nzaaeub-thumb-538905799.png" height="410px" id="img10">
+<p id="a9"> 
+Samsung Galaxy Tab A9+
+</p>
+<h3 id="update">New Stock Updates !</h3>
+
+
+</div>
+</div>
+<center>
+<p style="font-weight:bold;">
+Televisions
+</p>
+</center>
+<div id="tel">
+<div id="t2">
+
+<p id="rs36490"> &#8377;36,490</p>
+<button  id="cry">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy11()" id="buy11">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7n9_OUYFIAY0byRmiGiDwUDRf_bwkTDvUfmpzL8hKbry1XlzkoYYifiZQu7_ap_QpmB2Vk-CSMdW9dDScpcK11gsQgDt32L7fWKJg1lNo7TrlSbOTrreakv_CUrgeJPywATthc3PW8Z1M3BsHIdeVpz0cWnYX9mTm2a2WYK0vmu73pF-J8LAkdQZDpic/s320/in-crystal-uhd-du7000-499586-ua43due70bklxl-thumb-540344868.png" height="420px" id="img11">
+
+
+</div>
+<div id="t2">
+
+<p id="rs187490"> &#8377;1,87,490</p>
+<button  id="neo">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy12()" id="buy12">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwD_4oBm-871UCnoBboAgknIBkGHSg3n2GvnsuhKDJfOLtKH3izfhI2ISQkWQ1LOQbn02WJ3evtrORt0u-xtECSn0U56po1NMT0T76nzupPPppmwuRDQrtxpG44yPzBa7xg4RjmPYAz-MygGQZeiTBxT8yw5MSA8W5rlv0zNzhnwzd0WhfJUV0rUICXms/s320/in-qled-qn85d-qa65qn85dbulxl-thumb-540949629.png" height="420px" id="img12">
+<br><br><br><br>
+<h3 id="update">New Stock Updates !</h3>
+
+</div>
+</div>
+<center>
+<p style="font-weight:bold;">
+Washing Machines
+</p>
+</center>
+<div id="wash">
+<div id="w2">
+
+<p id="rs47900"> &#8377;47,900</p>
+<button  id="wash1">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy13()" id="buy13">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio4-zx5grQ6shckKXmr4riprtut3nA5gshibEhroeF_AVEwb0SggB4rHOFQBilCLLx2aAyd4ezbz4o1QgY0bjP7uG43OWQeaDk7KlKo_EUWFj2qHi4h4An7uBuhOZgnCQJRhu_l2kkXEO1nbLQ1eIPvtGIoAwpkoP4Iu-hiL44KvMMKW34amyFEEyi6JM/s330/in-front-loading-washer-ww10t604clhs4-374537-ww80t604dlb-tl-thumb-383418741.png" height="340px" id="img13">
+
+</div>
+<div id="w2">
+
+<p id="rs24890"> &#8377;24,890</p>
+<button  id="wash2">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy14()" id="buy14">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHkCiHGUynwhLG2AdjdRl84Ll0B5i7Udc8C00naNMwHUCiZPQAQWPFDUWxSzLqxjDQx-ZbNaQxvBANQLPW6RdQmfdLXzTXDGnJa_LFsMwbbZwrBHW3EfNFyRaaOeHz5l-pVXaBcRs01vauvi7W92fzh7j9-tQg1gSW9ujLZirevF82FVYpY8bo8fAINeA/s330/in-front-loading-ww60r20glmatl-322203-ww60r20glss-tl-thumb-531194548.png" height="340px" id="img14">
+
+</div>
+</div>
+<center>
+<p style="font-weight:bold;">
+Refrigerator
+</p>
+</center>
+<div id="refri">
+<div id="r1">
+
+<p id="rs19190"> &#8377;19,190</p>
+<button  id="refri1">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy15()" id="buy15">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0o9XKRocoHn6N7AA1EDxYSszQ_ev5WGNa-9EnZztMudlWpTW4pQCxzmI963V6TpX_axsABQI1G9z1lpRuzU32lmcCIZnd_Oi1cxd5ayovt2yDhKvOhrsxmiY75IxBk36brdtjCv_RTukJAa2WfywutQoIObLsdJ0JFYvDdmgl_5B2fgQkyer4-ZhnJsM/s344/in-digi-touch-cool%E2%84%A2-491891-rr23d2e23uz-hl-thumb-539520380.png" height="390px" id="img15">
+
+
+</div>
+<div id="r1">
+
+<p id="rs109000"> &#8377;1,09,000</p>
+<button  id="refri2">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy16()" id="buy16">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3YdvECXluNxbUYpF-VCHLLQNK6XOxsXaq8-D4xam9kggQBYXzl0ozstvXrMjGB-ssBkem4Ov0vUT0BaN_SIaXaFQ1V-uDR-LgfKQlrLXJdYcQq3mwn2TUMOXagOYSYCR5uSaLAhSbGtr6H8jp8echJDDlbur_EM22OJGY9nxB0e-X0smsVcPqWfY9o0o/s344/in-side-by-side-smart-conversion-449598-rs78cg8543s9hl-thumb-535107896.png" height="390px" id="img16">
+
+
+</div>
+</div>
+<center>
+<p style="font-weight:bold;">
+Microwaves
+</p>
+</center>
+<div id="microw">
+<nav id="mic1">
+
+<p id="out"> Out Of Stock</p>
+<button  id="microw1">
+Get Info
+</button>
+<input type="submit" value="Stock Alert" onclick="buy17()" id="buy17">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj11V4AN-uUFBQcCuCtu85PMWyu9CQYDO-hyYIS37NYF4KIv-dxuFlq7zerhz5RbCJHdwZe4yJP7DFpfngDB0UAyn-633l8xsFV7goJSabvXjtHZqV1eHw_kYMWnDmQI0kyGJ7q4v1vjOFj_590eYSMjicvpE7mz08JVnC1oddDYia53PNt08fv8QSSldU/s344/in-mw7000k-convection-mwo-with-hotblast%E2%84%A2-32l-mc32k7056cr-tl-thumb-538377175.png"  id="img17">
+
+
+</nav>
+<nav id="mic1">
+
+<p id="outo"> Out Of Stock</p>
+<button " id="microw2">
+Get Info
+</button>
+<input type="submit" value="Stock Alert" onclick="buy18()" id="buy18">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaxbmT5ZFtOCNWn_uziFe9Ya0PrVVz4zCG8YZLe33oOXmx4bKDiKHGq-j3CG7lE0-dN-mQTTLBL7DlRq1N-G0akEIDzL6gJakwSOwZmvgpfuKujzgubUgOohDmxhWySmDLRAw_kHXHBD86y_ZC64B2xwn0DQRUWFRa2LldOKVw6ptu4xoP2ZVwPub5v7A/s344/in-mw7300b-mc32b7388le-mc32b7382qc-tl-thumb-533791295.png"  id="img18">
+<br><br><br>
+<h3 id="update">New Stock Updates !</h3>
+
+</nav>
+</div>
+<center>
+<p style="font-weight:bold;">
+Air Conditioners
+</p>
+</center>
+<div id="airc">
+<div id="a1">
+
+<p id="rs61990"> &#8377;61,990</p>
+<button  id="airc1">
+Get Info
+</button>
+<input type="submit" value="Buy Now" onclick="buy19()" id="buy19">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxFa2t3V6Bw09GiiMLZ_vLTS-bjp1THeKmDnTmBsY9Kbhe6MuQKZCsN1oToPLF69UxDPa3N0g6FjRWdJn0128bIQCZ0WWcssAibeCl8OD8qhjTcKyZveuXnnpiiNMv2yulGZvLIOaiuRrsDUb10ynOQuE59z4s55OH8aYwi_cw-Ftgwv_5tYqqKDllU18/s344/in-ar9500-ac-windfree-448326-ar18cy5amwknna-thumb-534999069.png"  id="img19">
+
+
+</div>
+<div id="a1">
+
+<p id="outof"> Out Of Stock</p>
+<button id="airc2">
+Get Info
+</button>
+<button onmouseover="buy20()" id="buy20">Stock Alert </button>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi28koYcT4pUzWibEF-5YiQcbJzgaxK02Gr2NyxhWYZbHEHMCddZ9e9YhOyPuHuKx6o1WRWdbCFALn6xP2w4wbFTYLcTrZUWv8jTSHtnw7-k7L2rtK51jopIXfIkaXsdkfkBswrOwgBhuiDbOODziT23rjUO7BHCV3KRDdnqT_1pmZObcvmIgIIITMVqMY/s344/in-inverter-split-ac-ar18dy5bawk-5-05-kw-1-5-5-star-ar18dy5bawknna-thumb-541603986.png"  id="img20">
+<br>
+<h3 id="update">New Stock Updates !</h3>
+
+</div>
+</div>
+<script>
+
+function Day()
+{
+var a = document.getElementById("body");
+
+var b = document.getElementById("p1");
+
+var c = document.getElementById("w1");
+
+var d = document.getElementById("buy1");
+
+var e = document.getElementById("buy2");
+
+var f = document.getElementById("buy3");
+
+var g = document.getElementById("buy4");
+
+var h = document.getElementById("buy5");
+
+var i = document.getElementById("buy6");
+
+var j = document.getElementById("buy7");
+
+var k = document.getElementById("buy8");
+
+var l = document.getElementById("buy9");
+
+var m = document.getElementById("buy10");
+
+var n = document.getElementById("buy11");
+
+var o = document.getElementById("buy12");
+
+var p = document.getElementById("buy13");
+
+var q = document.getElementById("buy14");
+
+var r = document.getElementById("buy15");
+
+var s = document.getElementById("buy16");
+
+var t = document.getElementById("buy17");
+
+var u = document.getElementById("buy18");
+
+var v = document.getElementById("buy19");
+
+var w = document.getElementById("buy20");
+
+var x = document.getElementById("t1");
+
+var y = document.getElementById("t2");
+
+var z = document.getElementById("family");
+
+var A = document.getElementById("r1");
+
+var B = document.getElementById("mic1");
+
+var C = document.getElementById("a1");
+
+var D = document.getElementById("s24");
+
+var E = document.getElementById("s23");
+
+var F = document.getElementById("s21");
+
+var G = document.getElementById("f15");
+
+var H = document.getElementById("f55");
+
+var I = document.getElementById("m14");
+
+var J = document.getElementById("fit3");
+
+var K = document.getElementById("wat6");
+
+var L = document.getElementById("snine");
+
+var M = document.getElementById("anine");
+
+var N = document.getElementById("cry");
+
+var O = document.getElementById("neo");
+
+var P = document.getElementById("wash1");
+
+var Q = document.getElementById("wash2");
+
+var R = document.getElementById("refri1");
+
+var S = document.getElementById("refri2");
+
+var T = document.getElementById("microw1");
+
+var U = document.getElementById("microw2");
+
+var V = document.getElementById("airc1");
+
+var W = document.getElementById("airc2");
+
+a.style.backgroundColor="white";
+a.style.color="black";
+b.style.backgroundColor="white";
+b.style.color="black";
+c.style.backgroundColor="white";
+c.style.color="black";
+d.style.backgroundColor="black";
+d.style.color="white";
+e.style.backgroundColor="black";
+e.style.color="white";
+f.style.backgroundColor="black";
+f.style.color="white";
+g.style.backgroundColor="black";
+g.style.color="white";
+h.style.backgroundColor="black";
+h.style.color="white";
+i.style.backgroundColor="black";
+i.style.color="white";
+j.style.backgroundColor="black";
+j.style.color="white";
+k.style.backgroundColor="black";
+k.style.color="white";
+l.style.backgroundColor="black";
+l.style.color="white";
+m.style.backgroundColor="black";
+m.style.color="white";
+n.style.backgroundColor="black";
+n.style.color="white";
+o.style.backgroundColor="black";
+o.style.color="white";
+p.style.backgroundColor="black";
+p.style.color="white";
+q.style.backgroundColor="black";
+q.style.color="white";
+r.style.backgroundColor="black";
+r.style.color="white";
+s.style.backgroundColor="black";
+s.style.color="white";
+t.style.backgroundColor="black";
+t.style.color="white";
+u.style.backgroundColor="black";
+u.style.color="white";
+v.style.backgroundColor="black";
+v.style.color="white";
+w.style.backgroundColor="black";
+w.style.color="white";
+x.style.backgroundColor="white";
+x.style.color="black";
+y.style.backgroundColor="white";
+y.style.color="black";
+z.style.backgroundColor="white";
+z.style.color="black";
+A.style.backgroundColor="white";
+A.style.color="black";
+B.style.backgroundColor="white";
+B.style.color="black";
+C.style.backgroundColor="white";
+C.style.color="black";
+D.style.backgroundColor="black";
+D.style.color="white";
+E.style.backgroundColor="black";
+E.style.color="white";
+F.style.backgroundColor="black";
+F.style.color="white";
+G.style.backgroundColor="black";
+G.style.color="white";
+H.style.backgroundColor="black";
+H.style.color="white";
+I.style.backgroundColor="black";
+I.style.color="white";
+J.style.backgroundColor="black";
+J.style.color="white";
+K.style.backgroundColor="black";
+K.style.color="white";
+L.style.backgroundColor="black";
+L.style.color="white";
+M.style.backgroundColor="black";
+M.style.color="white";
+N.style.backgroundColor="black";
+N.style.color="white";
+O.style.backgroundColor="black";
+O.style.color="white";
+P.style.backgroundColor="black";
+P.style.color="white";
+Q.style.backgroundColor="black";
+Q.style.color="white";
+R.style.backgroundColor="black";
+R.style.color="white";
+S.style.backgroundColor="black";
+S.style.color="white";
+T.style.backgroundColor="black";
+T.style.color="white";
+U.style.backgroundColor="black";
+U.style.color="white";
+V.style.backgroundColor="black";
+V.style.color="white";
+W.style.backgroundColor="black";
+W.style.color="white";
+
+
+
+
+}
+
+
+
+
+function Night()
+{
+var a = document.getElementById("body");
+
+var b = document.getElementById("p1");
+
+var c = document.getElementById("w1");
+
+var d = document.getElementById("buy1");
+
+var e = document.getElementById("buy2");
+
+var f = document.getElementById("buy3");
+
+var g = document.getElementById("buy4");
+
+var h = document.getElementById("buy5");
+
+var i = document.getElementById("buy6");
+
+var j = document.getElementById("buy7");
+
+var k = document.getElementById("buy8");
+
+var l = document.getElementById("buy9");
+
+var m = document.getElementById("buy10");
+
+var n = document.getElementById("buy11");
+
+var o = document.getElementById("buy12");
+
+var p = document.getElementById("buy13");
+
+var q = document.getElementById("buy14");
+
+var r = document.getElementById("buy15");
+
+var s = document.getElementById("buy16");
+
+var t = document.getElementById("buy17");
+
+var u = document.getElementById("buy18");
+
+var v = document.getElementById("buy19");
+
+var w = document.getElementById("buy20");
+
+var x = document.getElementById("t1");
+
+var y = document.getElementById("t2");
+
+var z = document.getElementById("family");
+
+var A = document.getElementById("r1");
+
+var B = document.getElementById("mic1");
+
+var C = document.getElementById("a1");
+
+var D = document.getElementById("s24");
+
+var E = document.getElementById("s23");
+
+var F = document.getElementById("s21");
+
+var G = document.getElementById("f15");
+
+var H = document.getElementById("f55");
+
+var I = document.getElementById("m14");
+
+var J = document.getElementById("fit3");
+
+var K = document.getElementById("wat6");
+
+var L = document.getElementById("snine");
+
+var M = document.getElementById("anine");
+
+var N = document.getElementById("cry");
+
+var O = document.getElementById("neo");
+
+var P = document.getElementById("wash1");
+
+var Q = document.getElementById("wash2");
+
+var R = document.getElementById("refri1");
+
+var S = document.getElementById("refri2");
+
+var T = document.getElementById("microw1");
+
+var U = document.getElementById("microw2");
+
+var V = document.getElementById("airc1");
+
+var W = document.getElementById("airc2");
+
+a.style.backgroundColor="black";
+a.style.color="white";
+b.style.backgroundColor="black";
+b.style.color="white";
+c.style.backgroundColor="black";
+c.style.color="white";
+d.style.backgroundColor="white";
+d.style.color="black";
+e.style.backgroundColor="white";
+e.style.color="black";
+f.style.backgroundColor="white";
+f.style.color="black";
+g.style.backgroundColor="white";
+g.style.color="black";
+h.style.backgroundColor="white";
+h.style.color="black";
+i.style.backgroundColor="white";
+i.style.color="black";
+j.style.backgroundColor="white";
+j.style.color="black";
+k.style.backgroundColor="white";
+k.style.color="black";
+l.style.backgroundColor="white";
+l.style.color="black";
+m.style.backgroundColor="white";
+m.style.color="black";
+n.style.backgroundColor="white";
+n.style.color="black";
+o.style.backgroundColor="white";
+o.style.color="black";
+p.style.backgroundColor="white";
+p.style.color="black";
+q.style.backgroundColor="white";
+q.style.color="black";
+r.style.backgroundColor="white";
+r.style.color="black";
+s.style.backgroundColor="white";
+s.style.color="black";
+t.style.backgroundColor="white";
+t.style.color="black";
+u.style.backgroundColor="white";
+u.style.color="black";
+v.style.backgroundColor="white";
+v.style.color="black";
+w.style.backgroundColor="white";
+w.style.color="black";
+x.style.backgroundColor="black";
+x.style.color="white";
+y.style.backgroundColor="black";
+y.style.color="white";
+z.style.backgroundColor="black";
+z.style.color="white";
+A.style.backgroundColor="black";
+A.style.color="white";
+B.style.backgroundColor="black";
+B.style.color="white";
+C.style.backgroundColor="black";
+C.style.color="white";
+D.style.backgroundColor="white";
+D.style.color="black";
+E.style.backgroundColor="white";
+E.style.color="black";
+F.style.backgroundColor="white";
+F.style.color="black";
+G.style.backgroundColor="white";
+G.style.color="black";
+H.style.backgroundColor="white";
+H.style.color="black";
+I.style.backgroundColor="white";
+I.style.color="black";
+J.style.backgroundColor="white";
+J.style.color="black";
+K.style.backgroundColor="white";
+K.style.color="black";
+L.style.backgroundColor="white";
+L.style.color="black";
+M.style.backgroundColor="white";
+M.style.color="black";
+N.style.backgroundColor="white";
+N.style.color="black";
+O.style.backgroundColor="white";
+O.style.color="black";
+P.style.backgroundColor="white";
+P.style.color="black";
+Q.style.backgroundColor="white";
+Q.style.color="black";
+R.style.backgroundColor="white";
+R.style.color="black";
+S.style.backgroundColor="white";
+S.style.color="black";
+T.style.backgroundColor="white";
+T.style.color="black";
+U.style.backgroundColor="white";
+U.style.color="black";
+V.style.backgroundColor="white";
+V.style.color="black";
+W.style.backgroundColor="white";
+W.style.color="black";
+
+}
+
+ 
+function family()
+{
+var a = document.getElementById("family").value;
+
+var b = document.getElementById("body");
+
+var c = document.getElementById("family");
+
+var d = document.getElementById("buy1");
+
+var e = document.getElementById("buy2");
+
+var f = document.getElementById("buy3");
+
+var g = document.getElementById("buy4");
+
+var h = document.getElementById("buy5");
+
+var i = document.getElementById("buy6");
+
+var j = document.getElementById("buy7");
+
+var k = document.getElementById("buy8");
+
+var l = document.getElementById("buy9");
+
+var m = document.getElementById("buy10");
+
+var n = document.getElementById("buy11");
+
+var o = document.getElementById("buy12");
+
+var p = document.getElementById("buy13");
+
+var q = document.getElementById("buy14");
+
+var r = document.getElementById("buy15");
+
+var s = document.getElementById("buy16");
+
+var t = document.getElementById("buy17");
+
+var u = document.getElementById("buy18");
+
+var v = document.getElementById("buy19");
+
+var w = document.getElementById("buy20");
+
+var D = document.getElementById("s24");
+
+var E = document.getElementById("s23");
+
+var F = document.getElementById("s21");
+
+var G = document.getElementById("f15");
+
+var H = document.getElementById("f55");
+
+var I = document.getElementById("m14");
+
+var J = document.getElementById("fit3");
+
+var K = document.getElementById("wat6");
+
+var L = document.getElementById("snine");
+
+var M = document.getElementById("anine");
+
+var N = document.getElementById("cry");
+
+var O = document.getElementById("neo");
+
+var P = document.getElementById("wash1");
+
+var Q = document.getElementById("wash2");
+
+var R = document.getElementById("refri1");
+
+var S = document.getElementById("refri2");
+
+var T = document.getElementById("microw1");
+
+var U = document.getElementById("microw2");
+
+var V = document.getElementById("airc1");
+
+var W = document.getElementById("airc2"); 
+
+b.style.fontFamily =a;
+c.style.fontFamily =a;
+d.style.fontFamily =a;
+e.style.fontFamily =a;
+f.style.fontFamily =a;
+g.style.fontFamily =a;
+h.style.fontFamily =a;
+i.style.fontFamily =a;
+j.style.fontFamily =a;
+k.style.fontFamily =a;
+l.style.fontFamily =a;
+m.style.fontFamily =a;
+n.style.fontFamily =a;
+o.style.fontFamily =a;
+p.style.fontFamily =a;
+q.style.fontFamily =a;
+r.style.fontFamily =a;
+s.style.fontFamily =a;
+t.style.fontFamily =a;
+u.style.fontFamily =a;
+v.style.fontFamily =a;
+w.style.fontFamily =a;
+D.style.fontFamily =a;
+E.style.fontFamily =a;
+F.style.fontFamily =a;
+G.style.fontFamily =a;
+H.style.fontFamily =a;
+I.style.fontFamily =a;
+J.style.fontFamily =a;
+K.style.fontFamily =a;
+L.style.fontFamily =a;
+M.style.fontFamily =a;
+N.style.fontFamily =a;
+O.style.fontFamily =a;
+P.style.fontFamily =a;
+Q.style.fontFamily =a;
+R.style.fontFamily =a;
+S.style.fontFamily =a;
+T.style.fontFamily =a;
+U.style.fontFamily =a;
+V.style.fontFamily =a;
+W.style.fontFamily =a;
+b.style.filter="saturate("+a+"%)";
+
+var Z = document.getElementById("img1");
+
+Z.src=a;
+}
+
+
+function buy1()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID S2413U99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy2()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID S2369G99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy3()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID S2139F99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy4()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID F1515G99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy5()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID F5529G99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy6()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID M1412G49               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy7()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID F3499W99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy8()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID S6369W99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy9()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID S9549F99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy10()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID A9249L99               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy11()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID C3649T90               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy12()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID N1874T90               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy13()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID A2400W00               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy14()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID A4701W20               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy15()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID R5328F12               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy16()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID RF268F22               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy17()
+{
+window.alert("Our Team Will Notify You Soon");
+}
+
+function buy18()
+{
+window.alert("Our Team Will Notify You Soon");
+}
+
+function buy19()
+{
+window.alert("Your Order Is Confirmed ✅  "+"Order ID A2811C11               "+"Get Ready With Cash To Receive Your Order.");
+}
+
+function buy20()
+{
+window.alert("Our Team Will Notify You Soon");
+}
+
+
+</script>
+</body>
+</html>
