@@ -1,4 +1,3 @@
-<script>
 
 function Day()
 {
@@ -645,4 +644,4 @@ window.alert("Our Team Will Notify You Soon");
 }
 
 
-</script>
+
