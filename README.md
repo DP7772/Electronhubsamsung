@@ -1,6 +1,6 @@
 # 🚀 ElectronHubSamsung
 
-![ElectronHubSamsung Banner](https://raw.githubusercontent.com/DP7772/Electronhubsamsung/main/screenshot.png)
+![ElectronHubSamsung Banner](https://raw.githubusercontent.com/DP7772/Electronhubsamsung/main/Banner.png)
 
 A **modern e-commerce webpage** showcasing Samsung products with interactive features, built using **HTML, CSS, and JavaScript**.
 
